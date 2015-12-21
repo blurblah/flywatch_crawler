@@ -13,8 +13,11 @@ else
 	echo "${DIR} directory is exists already."
 fi
 
-echo "Start crawling for flywatch."
+echo "#### Start crawling for flywatch ####"
 scrapy crawl flywatch -o ${DIR}/${JSON_FILE}
-echo "End crawling."
+echo "#### End crawling ####"
 
 # write to db
+echo "#### Start DB update... ####"
+python json_uploader.py ${DIR}/${JSON_FILE}
+echo "#### End of update ####"

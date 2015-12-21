@@ -5,18 +5,17 @@ import MySQLdb
 import MySQLdb.cursors
 import json
 import os.path
-import time
+from datetime import datetime
 
-#print "arg number:", len(sys.argv)
-#print "args:", str(sys.argv)
 BOARD1_NAME = "flywatch_image1"
 BOARD3_NAME = "flywatch_image3"
 BOARD4_NAME = "flywatch_image4"
 
-def selectArticles(db, boardName):
-	cursor = db.cursor()
-	cursor.execute('SELECT * FROM articles WHERE board = %s ORDER BY created_at DESC LIMIT 18',
-					args = [boardName])
+def selectArticles(connection, boardName):
+	cursor = connection.cursor()
+	cursor.execute('SET NAMES utf8;')
+	cursor.execute('SELECT * FROM articles WHERE board = %s \
+					ORDER BY created_at DESC LIMIT 18;', [boardName])
 	return cursor.fetchall()
 
 def extractBoardSpecifiedItems(jsonData, boardName):
@@ -53,16 +52,20 @@ def insertArticle(connection, boardName, article):
 		print Exception, error
 		connection.rollback()
 
+def stringToDateTime(str):
+	return datetime.strptime(str.encode('utf-8'), '%Y-%m-%d %H:%M')
+
 def insertLatestArticles(connection, dbData, boardName, jsonData):
 	for article in jsonData:
 		if len(dbData) == 0:
 			insertArticle(connection, boardName, article)
 		else:
 			for row in dbData:
-				if article['createdAt'].encode('utf-8') > row['created_at'] or \
-					(article['createdAt'].encode('utf-8') == row['created_at'] and \
+				if stringToDateTime(article['createdAt']) > row['created_at'] or \
+					(stringToDateTime(article['createdAt']) == row['created_at'] and \
 						article['title'].encode('utf-8') != row['title']):
 					insertArticle(connection, boardName, article)
+					break
 				else:
 					break
 
