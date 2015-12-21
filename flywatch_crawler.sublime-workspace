@@ -1,0 +1,229 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"urlli",
+				"urllib2	module"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			]
+		],
+		"width": 556.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/sunchanlee/workspace/python_workspace/simple-telegram-bot/bot.py",
+		"/Users/sunchanlee/workspace/python_workspace/simple-telegram-bot/clien-crawler.py",
+		"/Users/sunchanlee/workspace/python_workspace/simple-telegram-bot/test-scrap.py",
+		"/Users/sunchanlee/workspace/python_workspace/myboard/sample_board/views.py",
+		"/Users/sunchanlee/workspace/python_workspace/myboard/myboard/settings.py",
+		"/Users/sunchanlee/workspace/python_workspace/samplebotondjango/samplebotondjango/urls.py",
+		"/Users/sunchanlee/workspace/python_workspace/samplebotondjango/bot/views.py",
+		"/Users/sunchanlee/workspace/python_workspace/samplebotondjango/samplebotondjango/settings.py",
+		"/Users/sunchanlee/workspace/python_workspace/samplebotondjango/manage.py",
+		"/Users/sunchanlee/workspace/python_workspace/blurblahs-telegram-sample-bot/main.py",
+		"/Users/sunchanlee/workspace/python_workspace/myboard/manage.py",
+		"/Users/sunchanlee/workspace/python_workspace/myboard/sample_board/admin.py",
+		"/Users/sunchanlee/workspace/python_workspace/myboard/sample_board/models.py",
+		"/Users/sunchanlee/workspace/python_workspace/myboard/sample_board/templates/writeForm.html",
+		"/Users/sunchanlee/workspace/python_workspace/myboard/sample_board/templates/page.html",
+		"/Users/sunchanlee/workspace/python_workspace/myboard/myboard/urls.py",
+		"/Users/sunchanlee/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/sunchanlee/workspace/python_workspace/mysite/manage.py",
+		"/Users/sunchanlee/workspace/python_workspace/mysite/polls/models.py",
+		"/Users/sunchanlee/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/sunchanlee/workspace/python_workspace/mysite/mysite/settings.py",
+		"/Users/sunchanlee/Library/Application Support/Sublime Text 2/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/Users/sunchanlee/workspace/python_workspace/mysite/polls/__init__.py",
+		"/Users/sunchanlee/Library/Application Support/Sublime Text 2/Packages/Git/Git.sublime-settings",
+		"/Users/sunchanlee/Library/Application Support/Sublime Text 2/Packages/Terminal/Terminal.sublime-settings",
+		"/Users/sunchanlee/Library/Application Support/Sublime Text 2/Packages/User/MacTerminal.sublime-settings",
+		"/Users/sunchanlee/workspace/blog/page-archives.php",
+		"/Users/sunchanlee/workspace/web_workspace/event_sample.html"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 162.0,
+	"status_bar_visible": true
+}
