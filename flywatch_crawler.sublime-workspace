@@ -11,13 +11,6 @@
 	},
 	"buffers":
 	[
-		{
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -71,6 +64,13 @@
 	},
 	"file_history":
 	[
+		"/Users/sunchanlee/workspace/python_workspace/flywatch_crawler/start_crawl.sh",
+		"/Users/sunchanlee/workspace/python_workspace/flywatch_crawler/flywatch_crawler/settings.py",
+		"/Users/sunchanlee/workspace/python_workspace/flywatch_crawler/flywatch_crawler/spiders/flywatch_spider.py",
+		"/Users/sunchanlee/workspace/python_workspace/flywatch_crawler/flywatch_crawler/items.py",
+		"/Users/sunchanlee/workspace/python_workspace/flywatch_crawler/json_uploader.py",
+		"/Users/sunchanlee/workspace/python_workspace/flywatch_crawler/flywatch_crawler.sublime-project",
+		"/Users/sunchanlee/workspace/python_workspace/flywatch_crawler/test.py",
 		"/Users/sunchanlee/workspace/python_workspace/simple-telegram-bot/bot.py",
 		"/Users/sunchanlee/workspace/python_workspace/simple-telegram-bot/clien-crawler.py",
 		"/Users/sunchanlee/workspace/python_workspace/simple-telegram-bot/test-scrap.py",
@@ -133,34 +133,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

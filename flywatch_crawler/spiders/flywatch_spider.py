@@ -24,13 +24,6 @@ class FlyWatchSpider(scrapy.Spider):
 			item['url'] = self.BASE_URL + url
 			item['createdAt'] = sel.css("td.bl_date span::text").extract()[0]
 			yield scrapy.Request(item['url'], callback = self.parseDetails, meta = {'item': item})
-			#time.sleep(2)
-			#itemList.append(item)
-
-		#for item in itemList:
-		#	print "########", item['url']
-		#	time.sleep(1)
-		#	yield scrapy.Request(item['url'], callback = self.parseDetails, meta = {'item': item})
 
 	def parseDetails(self, response):
 		self.index += + 1
@@ -38,8 +31,8 @@ class FlyWatchSpider(scrapy.Spider):
 		# createdAt : td id bv_writedate text
 		# contents : div id bc_contentview text
 		item = response.meta['item']
-		item['title'] = "".join(response.css("td#bv_subject::text").extract()).lstrip().rstrip()
-		content = "".join(response.css("div#bv_contentview::text").extract())
+		item['title'] = "".join(response.css("td#bv_subject::text").extract()).encode('utf-8').lstrip().rstrip()
+		content = "".join(response.css("div#bv_contentview::text").extract()).encode('utf-8')
 		item['content'] = content.lstrip().rstrip().replace('\r', '').replace('\n', '')
 
 		print "####", self.index, "####"

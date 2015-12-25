@@ -38,7 +38,7 @@ def sortByCreatedTime(list, reverse = True):
 
 def insertArticle(connection, boardName, article):
 	cursor = connection.cursor()
-	print "Title of article to be inserted:", article['title']
+	print "Title of article to be inserted:", article['title'].encode('utf-8')
 	try:
 		cursor.execute('SET NAMES utf8;')
 		cursor.execute('INSERT INTO articles(board, title, content, url, created_at) \
@@ -63,7 +63,8 @@ def insertLatestArticles(connection, dbData, boardName, jsonData):
 			for row in dbData:
 				if stringToDateTime(article['createdAt']) > row['created_at'] or \
 					(stringToDateTime(article['createdAt']) == row['created_at'] and \
-						article['title'].encode('utf-8') != row['title']):
+						article['title'].encode('utf-8') != row['title'] and \
+						article['title'].encode('utf-8') != ""):
 					insertArticle(connection, boardName, article)
 					break
 				else:

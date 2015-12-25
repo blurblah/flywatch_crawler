@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS flywatch;
+USE flywatch;
+
+DROP TABLE IF EXISTS articles;
+CREATE TABLE articles
+(
+	id INT NOT NULL AUTO_INCREMENT,
+    board VARCHAR(20) NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    content TEXT,
+    url VARCHAR(255) NOT NULL,
+    created_at DATETIME NOT NULL,
+    
+    CONSTRAINT articles_pk PRIMARY KEY(id),
+    CONSTRAINT articles_unique UNIQUE(id)
+) ENGINE = INNODB DEFAULT CHARSET = UTF8;

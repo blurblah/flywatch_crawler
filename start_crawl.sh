@@ -2,7 +2,9 @@
 
 NOW=`date '+%Y%m%d_%H%M'`
 DATE=`date '+%Y%m%d'`
-DIR="json/${DATE}"
+PWD="$(dirname ${BASH_SOURCE[0]})"
+DIR="${PWD}/json/${DATE}"
+LOG_DIR="${PWD}/logs"
 JSON_FILE="flywatch_${NOW}.json"
 
 if [ ! -d ${DIR} ]
@@ -15,6 +17,11 @@ fi
 
 echo "#### Start crawling for flywatch ####"
 scrapy crawl flywatch -o ${DIR}/${JSON_FILE}
+CODE=$?
+if [ ${CODE} -ne 0 ]
+then
+	exit ${CODE}
+fi
 echo "#### End crawling ####"
 
 # write to db
